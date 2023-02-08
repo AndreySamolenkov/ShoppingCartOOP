@@ -9,7 +9,7 @@ class ShoppingCart:
 
   def remove_item(self, name):
     if name not in self.__cart:
-      return 'The cart is empty, nothing to remove'
+      return f'{name} is not in the cart.'
     self.__cart.pop(name)
     return f'{name} has been removed from your cart.'
 
